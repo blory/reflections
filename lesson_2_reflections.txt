@@ -1,9 +1,33 @@
 What happens when you initialize a repository? Why do you need to do it?
-A hidden .git file is created. So that you can track all changes that you make.
+   A hidden .git file is created. So that you can track all changes that you make.
 
-How is the staging area different from the working directory and the repository?
- What value do you think it offers?
+How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-The staging area is a temporary area where you can organize changes in a file
-from the working directory to the repository. 
-And it prepares files allowing you to commit files together at the sametime.
+   The staging area is a temporary area where you can organize changes in a file
+   from the working directory to the repository. 
+   And it prepares files allowing you to commit files together at the sametime.
+   
+How can you use the staging area to make sure you have one commit per logical change?
+
+	   Compare the staging area with the working directory to see the changes you want to commit,
+	    using the command git diff.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	
+     Create a new branch (using command git branch) seperate from the main branch to add new features, like different language or  
+     experimenting changes without affecting the main branch code.
+
+How do the diagrams help you visualize the branch structure?
+	
+	     The diagrams shows in each branch, commits in order from recent to oldest. And can show unreachable commits
+      	that are not connected to any branch.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	     Merging two branches together will result in a single branch. It will connect all changes from both branches
+      into one branch.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	    pros: Fast on small changes.
+	     Cons: Must manually fix conflicts
